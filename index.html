@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jage Food</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/Logo.png" class="Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Order.html">Order</a></li>
+                    <li><a href="#">Contact Us</a>
+                        <ul>
+                            <li><a href="#">Tel:+230 58458969</a></li>
+                            <li><a href="#">Email: jagefood@gmail.com</a></li>
+                            <li><a href="#">Postal: Royal Road Grand Bois, 60505</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Jage Food</h1>
+                <p>Enjoy your coffee or tea time at the beach with Jage Food pastry, serving delicious pastry since 2008 and now trying to create mixture of food flavours upon your choice.</p>
+                <button onclick="toggle()">History</button>
+                <div class="modal" id="modal">
+                    <div class="modal-body">
+                        “In 2008, I decided to build this small company to serve members of the public my delicious food I prepare and am willing to deliver it all around the Island. With the help of my loved ones and clients I have been able to create a market area for Jage Food, many thanks to everyone who have contributed in doing so. Now am trying to innovate not only through multimedia but am preparing pastries as per your choice of ingredient. My message to all the small and medium enterprises is, Know Your Worth, If You Keep Thinking of It, You Can Achieve It” ~Mrs Jagessur Dhanabye
+                    </div>
+
+                    <script>
+                        function toggle() {
+                            var x=document.getElementById("modal")
+
+                            if(x.style.display === "none") {
+                                x.style.display = "block";
+                            }
+
+                            else {
+                                x.style.display = "none";
+                            }
+                        }
+                    </script>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="card card1">
+                    <h5>Samoussa</h5>
+                    <p> Cheese, Masala, Fish, Chicken, Chicken & Cheese</p>
+                </div>
+                <div class="card card2">
+                    <h5>Pate</h5>
+                    <p> Cheese, Masala, Fish</p>
+                </div>
+                <div class="card card3">
+                    <h5>Halfmoon</h5>
+                    <p> Cheese, Fish, Chicken, Chicken & Cheese</p>
+                </div>
+                <div class="card card4">
+                    <h5>Croquette</h5>
+                    <p> Cheese, Fish, Chicken, Chicken & Cheese</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
